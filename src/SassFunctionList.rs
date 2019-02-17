@@ -6,15 +6,6 @@
 #[derive(Debug)]
 pub struct SassFunctionList(Sass_Function_List, Vec<Box<SassFunctionTraitObject>>);
 
-impl Drop for SassFunctionList
-{
-	#[inline(always)]
-	fn drop(&mut self)
-	{
-		self.0.delete()
-	}
-}
-
 impl Default for SassFunctionList
 {
 	#[inline(always)]

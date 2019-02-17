@@ -6,15 +6,6 @@
 #[derive(Debug)]
 pub struct SassImporterList(Sass_Importer_List, Vec<Box<SassImporterTraitObject>>);
 
-impl Drop for SassImporterList
-{
-	#[inline(always)]
-	fn drop(&mut self)
-	{
-		self.0.delete()
-	}
-}
-
 impl Default for SassImporterList
 {
 	#[inline(always)]
