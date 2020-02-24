@@ -29,4 +29,4 @@ codegen-units = 1
 [dependencies]
 libc = "^0.2"
 quick-error = "1.2.1"
-sass-sys = "0.4.3"
+sass-sys = "0.4.18"

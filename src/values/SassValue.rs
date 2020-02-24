@@ -376,7 +376,7 @@ impl SassValue
 	#[inline(always)]
 	pub fn new_list(size: usize, separator: ListSeparator, _is_bracketed: bool) -> Self
 	{
-		Self::made_by_c(unsafe { sass_make_list(size, separator.into()/*, _is_bracketed */) })
+		Self::made_by_c(unsafe { sass_make_list(size, separator.into(), _is_bracketed) })
 	}
 	
 	/// Creates a new map SassValue which will be ***free-ed*** when it is dropped unless `transfer_ownership_to_c()` is called.
